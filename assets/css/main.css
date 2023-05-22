@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+  background-image: linear-gradient(
+    to right,
+    #ffbbec,
+    #f6a8ec,
+    #e895ef,
+    #d785f4,
+    #bf76fa
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    to right,
+    #ffbbec,
+    #f6a8ec,
+    #e895ef,
+    #d785f4,
+    #bf76fa
+  );
+}
