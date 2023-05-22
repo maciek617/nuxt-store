@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16">
+  <div class="mt-16 container mx-auto px-4">
     <div>
       <p class="text-4xl lg:text-6xl xl:text-7xl">
         It's great to find <span class="gradient-text">yourself</span>

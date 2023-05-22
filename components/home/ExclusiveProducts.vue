@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-10 text-center lg:mt-16 xl:mt-20 2xl:mt-32">
+  <div class="mt-10 text-center container mx-auto px-4 lg:mt-16 xl:mt-20 2xl:mt-32">
     <h2 class="text-4xl lg:text-6xl xl:text-7xl">
       <span class="gradient-text">Exclusive</span> Products
     </h2>

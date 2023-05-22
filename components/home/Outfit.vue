@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[550px] bg-gray-100 rounded-t-md relative group">
+  <div class="h-[550px] bg-gray-100 rounded-t-md relative group container mx-auto px-4">
     <div class="px-4 py-2 flex gap-3">
       <nuxt-img
           src="../public/outfit.jpg"

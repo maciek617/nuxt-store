@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-white w-full flex items-start justify-center p-4 gap-4 lg:gap-10 xl:gap-20 2xl:gap-32"
+    class="text-white mt-20 w-full flex items-start justify-center p-4 gap-4 lg:gap-10 xl:gap-20 2xl:gap-32"
     :class="[bgColor]"
   >
     <div>
