@@ -3,14 +3,17 @@ const showNav = ref(false);
 const navLinks = ref([
   {
     title: 'Home',
+    path: '/',
     isActive: true
   },
   {
     title: 'Store',
+    path: '/store',
     isActive: false
   },
   {
     title: 'Outfits',
+    path: 'outfits',
     isActive: false
   }
 ]);
@@ -38,11 +41,16 @@ const updateActiveNavLink = (id: number) => {
       :class="[showNav ? 'translate-x-0' : '-translate-x-full']">
     <p class="text-2xl">LoCo</p>
     <ul class="flex items-center justify-center flex-col h-3/4 text-2xl gap-5 font-light lg:flex-row lg:text-lg lg:gap-10 xl:gap-14">
-      <li v-for="(navLink, index) in navLinks" :key="navLink.title" @click="updateActiveNavLink(index)" class="px-4 py-1 rounded-full transition-all cursor-pointer"
-          :class="[navLink.isActive ? 'bg-black text-white' : '']">{{ navLink.title }}
-      </li>
+        <NuxtLink v-for="(navLink, index) in navLinks" :key="navLink.title" @click="updateActiveNavLink(index)" :to="navLink.path" class="px-4 py-1 rounded-full transition-all cursor-pointer"
+            :class="[navLink.isActive ? 'bg-black text-white' : '']">
+            {{ navLink.title }}
+        </NuxtLink>
     </ul>
-    <Button text="Sign In" extra-classes="bg-black text-white  hover:bg-gray-700"/>
+
+    <NuxtLink to="/register">
+      <Button text="Sign In" extra-classes="bg-black text-white  hover:bg-gray-700"/>
+    </NuxtLink>
+
   </nav>
 </template>
 

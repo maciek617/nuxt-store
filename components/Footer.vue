@@ -34,15 +34,13 @@ const footerLinkBase = ref([
       labelIcon: 'fa-solid fa-credit-card',
       links: ['Przelewy24', 'Mastercard', 'Visa', 'PayPal']
     },
-  },
-
+  }
 ]);
-
 </script>
 
 <template>
-  <footer class="bg-gray-50 py-20">
-    <div class="container mx-auto px-4 flex flex-col lg:flex-row lg:flex-wrap lg:gap-32">
+  <footer class="bg-gray-50 py-20 z-30">
+    <div class="container mx-auto px-4 flex flex-col justify-center lg:flex-row lg:flex-wrap lg:gap-32">
       <div v-for="footerLink in footerLinkBase" :key="footerLink.label.labelName">
        <div class="flex items-center gap-2 mb-2">
          <i :class="footerLink.label.labelIcon"></i>
@@ -61,7 +59,3 @@ const footerLinkBase = ref([
     </div>
   </footer>
 </template>
-
-<style scoped>
-
-</style>

@@ -1,9 +1,10 @@
 <script setup lang="ts">
+const route = useRoute();
 
 </script>
 
 <template>
-  $END$
+<div class="mt-20">{{route.params.id}}</div>
 </template>
 
 <style scoped>
