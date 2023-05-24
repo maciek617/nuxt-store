@@ -1,5 +1,7 @@
 <template>
-  <div class="flex items-center justify-center gap-6 mt-24 container mx-auto px-4">
+  <div
+    class="flex items-center justify-center gap-6 mt-24 container mx-auto px-4"
+  >
     <div>
       <i class="fa-solid fa-arrow-left cursor-pointer"></i>
     </div>
