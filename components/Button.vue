@@ -11,13 +11,10 @@
 </template>
 
 <script setup lang="ts">
-defineProps({
-  text: {
-    type: String,
-    required: true,
-  },
-  extraClasses: String,
-});
+defineProps<{
+  text: string;
+  extraClasses: string;
+}>();
 
 defineEmits(['handleClick']);
 </script>
