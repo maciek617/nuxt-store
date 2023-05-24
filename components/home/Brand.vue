@@ -30,7 +30,6 @@ defineProps({
   brandName: String,
   brandText: String,
   link: String,
-  imageLink: String
-})
-
+  imageLink: String,
+});
 </script>
